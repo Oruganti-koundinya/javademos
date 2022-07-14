@@ -1,5 +1,5 @@
 
-public class d1Primitivetypes {
+public class d2PrimitivetypesC1 {
 
 	public static void main(String[] args) {
 		byte byteminvalue = Byte.MIN_VALUE;
