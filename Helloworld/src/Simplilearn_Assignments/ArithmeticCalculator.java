@@ -16,14 +16,14 @@ public class ArithmeticCalculator {
 	    {
 	    	
 	    	//Menu Oriented Calculator
-	        System.out.println("Enter Operation to be performed in calculator: 1/2/3/4/5/6 ?");
+	        System.out.println("Enter Operation to be performed in calculator: 1/2/3/4/5 ?");
 	          n = sc.nextInt();
 	          
 	          if(n == 1)
 	          {
 	              m1= sc.nextFloat();
 	              m2= sc.nextFloat();
-	              System.out.println("Addition :" + (m1+m2));
+	              System.out.println(" Addition :" + (m1+m2));
 	          }
 	          else if(n==2)
 	          {
@@ -43,13 +43,13 @@ public class ArithmeticCalculator {
 	              m2= sc.nextFloat();
 	              System.out.println("Division :" + (m1/m2));
 	          }
-	          else if(n==5)
+	         /* else if(n==5)
 	          {
 	              m1= sc.nextFloat();
 	              m2= sc.nextFloat();
 	              System.out.println("Modulous :" + (m1%m2));
-	          }
-	          else if(n==6)
+	          }*/
+	          else if(n==5)
 	          {
 	              System.out.println("Exiting the calculator");
 	              break;
