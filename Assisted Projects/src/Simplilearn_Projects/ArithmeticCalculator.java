@@ -1,4 +1,4 @@
-package Simplilearn_Assignments;
+package Simplilearn_Projects;
 import java.util.Scanner;
 
 public class ArithmeticCalculator {
