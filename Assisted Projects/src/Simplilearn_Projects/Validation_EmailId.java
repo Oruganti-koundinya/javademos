@@ -3,7 +3,7 @@ package Simplilearn_Projects;
 import java.util.Scanner;
 
 public class Validation_EmailId {
-
+	
 	public static void main(String[] args) {
 		String email[] = {"toreyson.entity@gmail.com","linkson.kolison@hotmail"};
 		
