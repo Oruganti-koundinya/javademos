@@ -23,6 +23,5 @@ class EmailValidation1 {
           System.out.println(searchemail +"-> Email_id found ");
         else
           System.out.println(searchemail +"-> Unable to find your email_id");
- 
     }
 }
