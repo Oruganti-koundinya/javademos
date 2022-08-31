@@ -1,6 +1,9 @@
 package DeskApplication;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class FixingBugs {
@@ -25,7 +28,6 @@ public class FixingBugs {
         int  slen = arr1.length;
         for(int i=0; i<slen;i++){
             System.out.println(arr[i]);
-            // display the all the Strings mentioned in the String array
         }
         ArrayList<Integer> arrlist = new ArrayList<Integer>();
         ArrayList<Integer> expenses = new ArrayList<Integer>();
@@ -93,10 +95,16 @@ public class FixingBugs {
     private static void searchExpenses(ArrayList<Integer> arrayList) {
         int leng = arrayList.size();
         System.out.println("Enter the expense you need to search:\t");
-        //Complete the method
+        Scanner sc = new Scanner(System.in);
+		int expenses = sc.nextInt();
+        int searchresult = Collections.binarySearch(arrayList,expenses);
+        System.out.println("Result =" +searchresult);
+        System.out.println(arrayList);
     }
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         int arrlength =  arrayList.size();
-       //Complete the method. The expenses should be sorted in ascending order.
+        System.out.println("ArrayList Before Sorting"+ arrayList);
+        Collections.sort(arrayList);
+        System.out.println("\nArrayList AFter Sorting" + arrayList);
     }
 }

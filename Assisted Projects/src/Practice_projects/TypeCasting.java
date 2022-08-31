@@ -4,33 +4,38 @@ public class TypeCasting {
 
 	public static void main(String[] args) {
 		
-		int i = 100;
-		System.out.println("Value of i :" +i);
-		
 		char c = 'K';
 		System.out.println("Value of c :" +c);
 		
-		float f = 5.0f;
-		System.out.println("Value of f :" +f);
-		
-		double d = 1.20;
-		System.out.println("Value of d :" +d);
-		
-		byte b = 127;
-		System.out.println("Value of b :" +b);
-		
-		short s = 2567;
-		System.out.println("Value of s :" +s);
-		
-		long l = 3989;
-		System.out.println("Value of l :" +l);
-		
 		//Implicit casting
-		int a = c;
-		System.out.println("Value of a :" +a);
+		// In Implicit conversion we are converting smaller data type into larger one
+		//So, we can convert without casting data type in value space.
+		int i = c;
+		System.out.println("Value of char in Integer :" +i);
 		
-		float x =c;
-		System.out.println("Value of x :" +x);
+		long l = c;
+		System.out.println("Value of char in long :" +l);
+		
+		double d = c;
+		System.out.println("Value of char in double :" +d);
+		
+		//Explicit Type casting
+		//In Explicit type casting we are converting a larger data type into smaller ones
+		//So, there will be a data loss as we can observe in case 4.
+		float f =(float) c;  //1
+		System.out.println("Value of char in float :" +f);
+		
+		byte b = (byte) c;  //2
+		System.out.println("Value of char in bytes :" +b);
+		
+		short s = (short) c;  //3
+		System.out.println("Value of char in short :" +s);
+		
+		double df = 97.678;
+		int a = (int) df;  //4
+		System.out.println("Value of double in int is :" +a);
+		
+
 
 	}
 

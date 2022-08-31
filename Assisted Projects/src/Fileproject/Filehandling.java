@@ -25,16 +25,16 @@ public class Filehandling {
 		//fw,fr,pw throws fileNotfound Exception and i.o Exception related to file input output stream.
 		fr = new FileReader("c://javafds//Filehandling//Assist.txt");
 		fw = new FileWriter("c://javafds//Filehandling//Assist.txt", true);
-		System.out.println("File Opened Successfully:" +"fw" + fr);
+		System.out.println("\nFile Opened Successfully:" +"fw" + fr);
 		fr.read();
 		
 		//We are Appending the Desired text in the file with the help of PrintWriter.
 		pw = new PrintWriter(fw);
-		pw.println("Hello Robert!");
-		pw.println("You are performing FileHandling project");
+		pw.print("Hello Robert!");
+		pw.print("You are performing FileHandling project");
 		
 		fis = new FileInputStream(myfile);
-		System.out.println("File successfully opened");
+		System.out.println("\nFile successfully opened");
 		int i;
 		while ( (i = fis.read()) != -1) 
 			{
@@ -46,7 +46,7 @@ public class Filehandling {
 		fw.close();
 		fr.close();
 		fis.close();
-		System.out.println("File Closed Successfully:" +fw +fr);
+		System.out.println("\nFile Closed Successfully:" +fw +fr);
 	}
 
 }

@@ -8,12 +8,12 @@ import java.io.ObjectOutputStream;
 public class SerializationDemo {
 	public static void main(String[] args) {
 
-		try (FileOutputStream fos = new FileOutputStream("C:\\javafds\\Filehandling\\emp1.ser");
+		try (FileOutputStream fos = new FileOutputStream("C:\\javafds\\Filehandling\\emp4.txt");
 				ObjectOutputStream oos = new ObjectOutputStream(fos);) {
 			
-			Employee emp1 = new Employee(3, "RK", 50000, 56342);
+			Employee emp4 = new Employee(4, "OK", 60000, 56342);
 			
-			oos.writeObject(emp1);
+			oos.writeObject(emp4);
 			
 			System.out.println("Serialized Employee object");
 			

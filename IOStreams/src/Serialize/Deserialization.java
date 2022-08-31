@@ -8,14 +8,14 @@ import java.io.ObjectInputStream;
 public class Deserialization {
 public static void main(String[] args) {
 		
-		try (FileInputStream fis = new FileInputStream("C:\\javafds\\Filehandling\\emp1.ser");
+		try (FileInputStream fis = new FileInputStream("C:\\javafds\\Filehandling\\emp4.txt");
 				ObjectInputStream ois = new ObjectInputStream(fis);) {
 			
-			Employee emp1 = (Employee) ois.readObject();
+			Employee emp4 = (Employee) ois.readObject();
 			
 			System.out.println("Employee object Deserialized");
 			
-			System.out.println(emp1);
+			System.out.println(emp4);
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

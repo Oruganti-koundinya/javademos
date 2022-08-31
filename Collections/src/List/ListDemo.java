@@ -21,7 +21,7 @@ public class ListDemo {
 		mystring.add("Koundinya");
 		mystring.add("How Are You");
 		mystring.add("Let's Print");
-		System.out.println("Eelements of list are :" +mystring);
+		System.out.println("Elements of list are :" +mystring);
 		
 	}
 
